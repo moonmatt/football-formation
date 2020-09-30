@@ -1,0 +1,30 @@
+canvas {
+    position: absolute;
+    left:0px;
+    top:0px;    
+}
+
+#mainCanvas {
+    background: transparent;
+    border: 1px solid red;
+    height: 600px;
+    width: 480px;
+    background-size: 480px 600px;
+    z-index: 999
+}
+#layer {
+    background: transparent;
+    border: 1px solid red;
+    height: 600px;
+    width: 480px;
+    background-size: 480px 600px;
+    z-index: 99
+}
+#backgroundCanvas {
+    background-image: url('pitch.jpg');
+    background-position: center center;
+    background-size: 480px 600px;
+    z-index: 9;
+    height: 600px;
+    width: 480px;
+}
