@@ -1,6 +1,6 @@
 // my canvas
-let canvas = document.querySelector('#mainCanvas')
-let cursorCanvas = document.querySelector('#layer')
+const canvas = document.querySelector('#mainCanvas')
+const cursorCanvas = document.querySelector('#layer')
 
 canvas.width = 480
 canvas.height = 600
@@ -8,72 +8,70 @@ canvas.height = 600
 cursorCanvas.width = 480
 cursorCanvas.height = 600
 
-let c = canvas.getContext('2d')
-let cursorC = cursorCanvas.getContext('2d')
+const c = canvas.getContext('2d')
+const cursorC = cursorCanvas.getContext('2d')
 
-function generateId() {
-    return '_' + Math.random().toString(36).substr(2, 9);
-  };
+const generateId = () => '_' + Math.random().toString(36).substr(2, 9);
 
 let grabbed = false
 
-let players = [
-{
-    role: 'Goalkeeper',
-    name: '',
-    width: 240,
-    height: 485
-}, {
-    role: 'Central Defender',
-    name: '',
-    width: 180,
-    height: 400
-}, {
-    role: 'Central Defender',
-    name: '',
-    width: 300,
-    height: 400
-}, {
-    role: 'Fullback',
-    name: '',
-    width: 80,
-    height: 350
-}, {
-    role: 'Fullback',
-    name: '',
-    width: 400,
-    height: 350
-}, {
-    role: 'Central Midfielder',
-    name: '',
-    width: 180,
-    height: 275
-}, {
-    role: 'Central Midfielder',
-    name: '',
-    width: 300,
-    height: 275
-}, {
-    role: 'Attacker',
-    name: '',
-    width: 100,
-    height: 165
-}, {
-    role: 'Attacker',
-    name: '',
-    width: 240,
-    height: 165
-}, {
-    role: 'Attacker',
-    name: '',
-    width: 380,
-    height: 165
-}, {
-    role: 'Striker',
-    name: '',
-    width: 240,
-    height: 75
-}   
+const players = [
+    {
+        role: 'Goalkeeper',
+        name: '',
+        width: 240,
+        height: 485
+    }, {
+        role: 'Central Defender',
+        name: '',
+        width: 180,
+        height: 400
+    }, {
+        role: 'Central Defender',
+        name: '',
+        width: 300,
+        height: 400
+    }, {
+        role: 'Fullback',
+        name: '',
+        width: 80,
+        height: 350
+    }, {
+        role: 'Fullback',
+        name: '',
+        width: 400,
+        height: 350
+    }, {
+        role: 'Central Midfielder',
+        name: '',
+        width: 180,
+        height: 275
+    }, {
+        role: 'Central Midfielder',
+        name: '',
+        width: 300,
+        height: 275
+    }, {
+        role: 'Attacker',
+        name: '',
+        width: 100,
+        height: 165
+    }, {
+        role: 'Attacker',
+        name: '',
+        width: 240,
+        height: 165
+    }, {
+        role: 'Attacker',
+        name: '',
+        width: 380,
+        height: 165
+    }, {
+        role: 'Striker',
+        name: '',
+        width: 240,
+        height: 75
+    }
 ]
 
 let temp
