@@ -1,7 +1,7 @@
 canvas {
     position: absolute;
-    left:0px;
-    top:0px;    
+    left: 0;
+    top: 0;    
 }
 
 #mainCanvas {
@@ -10,7 +10,7 @@ canvas {
     height: 600px;
     width: 480px;
     background-size: 480px 600px;
-    z-index: 999
+    z-index: 10;
 }
 #layer {
     background: transparent;
@@ -18,7 +18,7 @@ canvas {
     height: 600px;
     width: 480px;
     background-size: 480px 600px;
-    z-index: 99
+    z-index: 10;
 }
 #backgroundCanvas {
     background-image: url('pitch.jpg');
